@@ -4,7 +4,7 @@ const mongoose = require('mongoose');
 
 const User = mongoose.model('User');
 
-module.exports = (request, reponse, next) => {
+module.exports = (request, response, next) => {
     const { authorization } = request.headers;
     // authorization === 'Bearer sjadjsjajdsa'
 
