@@ -29,10 +29,6 @@ app.get('/auth' , requireAuth , (req , res) => {
     res.send(`Email: ${req.user.email}`);
 });
 
-app.get('/' , (req , res) => {
-    res.send('Hi there!');
-});
-
 app.listen( 3000 , () => {
     console.log('Litsening on port 3000');
 });

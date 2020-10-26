@@ -50,4 +50,8 @@ router.post( '/signin' , async (req, res) => {
     }
 });
 
+router.get('/' , (req , res) => {
+    res.send('Hi there!');
+});
+
 module.exports = router;
